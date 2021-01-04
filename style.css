@@ -177,7 +177,7 @@ body {
     letter-spacing: 1px;
     font-weight: 900;
     text-transform: uppercase;
-    box-shadow: 3px 3px 5px #fff, -3px -3px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: -3px -3px 5px #fff, 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 footer {
@@ -204,3 +204,175 @@ footer ul li a {
     text-decoration: none;
     color: black;
 }
+
+@media only screen and (min-width: 768px)
+ and (-webkit-min-device-pixel-ratio: 1){
+    .nav ul {
+       width: 60%;
+       margin: auto;
+       flex-direction: row;
+    }
+
+    .formSection h1{
+        margin: 1em 0;
+        font-size: 1.8em;
+    }
+
+    #video{
+        height: 400px;
+        padding: 15px;
+    }
+
+    #form > * {
+        margin-bottom: 2em;
+    }
+
+    #email {
+        padding: 1.3em;
+        font-size: .8em;
+    }
+
+    #submit {
+        padding: 1em;
+        width: 20em;
+        font-size: .8em;
+        font-weight: 900;
+    }
+
+    #features {
+        padding: 1em;
+    }
+
+    .product {
+        width: 60%;
+    }
+
+    .desc > h2 {
+        font-size: 1.6em;
+    }
+
+    .desc > p {
+        font-size: 1.2em;
+    }
+
+    .level {
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header {
+        height: 25vh;
+    }
+
+    #video {
+        height: 600px;
+    }
+    
+    #pricing {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        width: 40%;
+    }
+
+}
+
+@media  screen and (min-device-width: 1200px) and (min-device-width: 1440px){
+    .header {
+        padding: 0;
+        height: 10vh;
+        flex-direction: row;
+       
+    }
+
+    .logo {
+        width: 50%;
+        height: 100%;
+       
+    }
+
+    #header-img{
+        max-width: 60%;
+        display: block;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .nav {
+        width: 50%;
+        height: 100%;
+       
+    }
+
+    .nav ul {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .nav ul li {
+        font-size: 18px;
+    }
+
+    .formSection {
+        margin-top: 4em;
+    }
+
+    #email {
+        width: 30%;
+        padding: .7em;
+        box-shadow: 3px 3px 3px #bebebe,
+                    -3px -3px 20px #ffffff;
+    }
+
+    #submit {
+        padding: .3em 0;
+        width: 15%;
+        background-color: orange;
+    }
+
+    .grid {
+        border: 1px solid black;
+        display: grid;
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+        "icon desc"
+        "icon desc"
+        "icon desc"
+        ;
+        
+    }
+
+    .icon {
+        grid-area: icon;
+        color: orange;
+        align-self: center;
+        display: block;
+        border: 1px solid red;
+    }
+
+    .desc {
+        grid-area: desc;
+        font-size: 20px;
+        align-self: center;
+        border: 1px solid red;
+    }
+
+    .desc > * {
+        text-align: start;
+    }
+
+    .desc p {
+        font-size: 18px;
+      
+    }
+
+   
+}
+
